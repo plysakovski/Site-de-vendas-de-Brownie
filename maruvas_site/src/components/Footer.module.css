@@ -1,0 +1,158 @@
+.footer {
+  background: var(--dark);
+  color: var(--white);
+  padding: 60px 0 20px;
+  margin-top: auto;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footerSection h3 {
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.footerSection h4 {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.footerDescription {
+  color: #ccc;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socialLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.socialLinks a:hover {
+  background: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 0.8rem;
+}
+
+.footerLinks a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footerLinks a:hover {
+  color: var(--secondary);
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  color: #ccc;
+}
+
+.contactItem i {
+  color: var(--secondary);
+  margin-top: 0.2rem;
+  min-width: 16px;
+}
+
+.footerBottom {
+  border-top: 1px solid #444;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.paymentMethods {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.paymentMethods span {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.paymentIcons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.paymentIcons i {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.copyright {
+  text-align: right;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.copyright p {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .footerContent {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+}
